@@ -21,7 +21,8 @@ header h1 {
     font-size: 48px;
 }
 
-header h1 .seo {
+/*changed class to id since styling isn't being reused elsewhere*/
+header h1 #seo {
     color: #d9dcd6;
 }
 
@@ -52,7 +53,8 @@ p {
     font-size: 16px;
 }
 
-.hero {
+/*Changed most classes into html selectors for their respective elements*/
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -62,22 +64,22 @@ p {
 }
 
 .float-left {
-    float: left;
+    /*changed float value to inline-start/end so it does not have to be changed if the layout changes*/
+    float: inline-start;
     margin-right: 25px;
 }
 
 .float-right {
-    float: right;
+    float: inline-end;
     margin-left: 25px;
 }
 
-.content {
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/*since there is only one aside now, generic selector is more useful*/
 aside {
     margin-right: 20px;
     padding: 20px;
@@ -90,11 +92,9 @@ aside {
     color:#fff;
 }
 
-/*specifying elements to avoid having to assign class tags, cleaner layout*/
 aside article {
     margin-bottom: 32px;
     color: #fff;
-    
 }
 
 aside h3 {
@@ -108,7 +108,8 @@ aside img {
     max-width: 150px;
 }
 
-.search-engine-optimization {
+/*truncated most of classes into one universal class*/
+.card {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -117,52 +118,15 @@ aside img {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.card img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+.card h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/*footer class now unecessary, generic selector more functional*/
 footer {
     padding: 30px;
     clear: both;
