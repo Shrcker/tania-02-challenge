@@ -13,41 +13,45 @@
 
 <body>
     <header>
-        <h1 itemprop="name">Hori<span class="seo">seo</span>n</h1>
+        <h1 itemprop="name">Hori<span id="seo">seo</span>n</h1>
         <nav>
             <ul>
+                <!--anchor links only need appropriate id, don't need to add css-->
+                <!--shortened id names for brevity-->
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <a href="#search-engine">Search Engine Optimization</a>
                 </li>
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <a href="#online-reputation">Online Reputation Management</a>
                 </li>
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <a href="#social-media">Social Media Marketing</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <figure itemprop="image" class="hero">
-        <img itemprop="image" src="../images/digital-marketing-meeting.jpg" title="Office team discussing their schedule over a conference table."/>
+    <!--Added image alt text and titles for accessibility and screen reader users.-->
+    <figure itemprop="image">
+        <picture src="../images/digital-marketing-meeting.jpg" title="Site Banner" alt="Several office workers meeting over a conference table">
+        </picture>
     </figure>
-    <main itemscope itemtype="https://schema.org/Service" class="content">
-        <article class="search-engine-optimization">
-            <img itemprop="image" src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+    <main itemscope itemtype="https://schema.org/Service">
+        <article id="search-engine" class="card">
+            <img itemprop="image" class="float-left" src="./assets/images/search-engine-optimization.jpg" title="SEO" alt="Notebook that says 'SEO' in comical font, sitting on a cluttered desk." />
             <h2 itemprop="name">Search Engine Optimization</h2>
             <p itemprop="description">
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </article>
-        <article id="online-reputation-management" class="online-reputation-management">
-            <img itemprop="image" src="./assets/images/online-reputation-management.jpg" class="float-right" />
+        <article id="online-reputation" class="card">
+            <img itemprop="image" class="float-right" src="./assets/images/online-reputation-management.jpg" title="Reputation" alt="Laptop displaying 'Reputation' as a steadily increasing line graph."/>
             <h2 itemprop="name">Online Reputation Management</h2>
             <p itemprop="description">
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </article>
-        <article id="social-media-marketing" class="social-media-marketing">
-            <img itemprop="image" src="./assets/images/social-media-marketing.jpg" class="float-left" />
+        <article id="social-media" class="card">
+            <img itemprop="image" class="float-left" src="./assets/images/social-media-marketing.jpg" title="Social Media" alt="Cluttered conference table with buttons and pamphlets about social media surrounded by office workers visibly discussing with each other. "/>
             <h2 itemprop="name">Social Media Marketing</h2>
             <p itemprop="description">
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
@@ -57,21 +61,21 @@
     <aside itemscope itemtype="https://schema.org/Product">
         <article itemtype="serviceType">
             <h3 itemtype="name">Lead Generation</h3>
-            <img itemtype="image" src="./assets/images/lead-generation.png" />
+            <img itemtype="image" src="./assets/images/lead-generation.png" title="Lead Siphon" alt="2D Graphic of silhouetted siphon turning a gear into money"/>
             <p itemtype="description">
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
             </p>
         </article>
         <article itemtype="serviceType">
             <h3 itemtype="name">Brand Awareness</h3>
-            <img itemtype="image" src="./assets/images/brand-awareness.png" />
+            <img itemtype="image" src="./assets/images/brand-awareness.png" title="Lightball Man" alt="2D Graphic of a Lightbulb wearing a suit, emitting brainwaves."/>
             <p itemtype="description">
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
         </article>
         <article itemtype="serviceType">
             <h3 itemtype="name">Cost Management</h3>
-            <img itemtype="image" src="./assets/images/cost-management.png" />
+            <img itemtype="image" src="./assets/images/cost-management.png" title="Cost Manager" alt="2D Graphic of a gear superimposed with several coins."/>
             <p itemtype="description">
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
