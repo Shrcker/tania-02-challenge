@@ -8,6 +8,11 @@ This proved to be a solid exercise for me since it forced me to review a lot abo
 
 The mental exercise did help me build a lot of confidence with basic HTML and CSS, though, and I'm really glad to have it all finished. Looking forward to similar assignments moving forward!
 
+Link to the site: 
+
+Here is a screenshot of the site:
+![Horiseon Webpage](./Assets/images/horiseonWebPage.png)
+
 ## Usage
 
 This mock page is meant to emulate an SEO company's landing page where an end user would scroll down to review their services. The header is also the page's navigation, clicking the labels on the top right will scroll the viewport down to the appropriate article.
