@@ -10,7 +10,6 @@ The mental exercise did help me build a lot of confidence with basic HTML and CS
 
 Link to the site: 
 
-Here is a screenshot of the site:
 ![Horiseon Webpage](./Assets/images/horiseonWebPage.png)
 
 ## Usage
